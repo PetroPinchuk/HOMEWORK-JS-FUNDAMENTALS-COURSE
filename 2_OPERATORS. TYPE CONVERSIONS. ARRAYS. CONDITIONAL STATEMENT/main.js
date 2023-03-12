@@ -126,3 +126,4 @@ switch (true) {
         console.log('Некоректне значення часу!');
         break;
 }
+
