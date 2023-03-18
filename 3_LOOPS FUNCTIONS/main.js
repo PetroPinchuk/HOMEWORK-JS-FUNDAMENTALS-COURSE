@@ -73,12 +73,12 @@ function funcName(arr) {
     newArr.push(numbers, strings);
     
     for (let i = 0; i < arr.length; i++) {
-        if (typeof arr[i] === "number") numbers.push(arr[i]);
-        if (typeof arr[i] === "string") strings.push(arr[i]);
+        if (typeof arr[i] === 'number') numbers.push(arr[i]);
+        if (typeof arr[i] === 'string') strings.push(arr[i]);
         if (Array.isArray(arr[i])) {
             for (let j = 0; j < arr[i].length; j++) {
-                if (typeof arr[i][j] === "number") numbers.push(arr[i][j]);
-                if (typeof arr[i][j] === "string") strings.push(arr[i][j]);
+                if (typeof arr[i][j] === 'number') numbers.push(arr[i][j]);
+                if (typeof arr[i][j] === 'string') strings.push(arr[i][j]);
             }
         }
     }
