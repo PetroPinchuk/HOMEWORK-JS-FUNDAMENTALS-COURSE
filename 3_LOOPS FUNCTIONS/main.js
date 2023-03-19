@@ -113,3 +113,17 @@ const findUnique = arr => (new Set(arr)).size === arr.length;
 
 console.log(findUnique([1, 2, 3, 5, 3]));
 console.log(findUnique([1, 2, 3, 5, 11]));
+
+
+console.log('-************-@@@@@@@@-----Додаткове завдання-----@@@@@@@@-************-');
+
+function create(password) {
+    return function(passwordAttempt) {
+        return passwordAttempt === password;
+    }
+}
+
+const tom = create('pass_for_Tom');
+
+console.log(tom('pass_for_Tom'));
+console.log(tom('pass_for_tom'));
