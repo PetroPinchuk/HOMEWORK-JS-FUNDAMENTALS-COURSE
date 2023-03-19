@@ -99,18 +99,69 @@ try {
     console.log(area);
 
 } catch (error) {
-    console.error(error.message);
+    console.log(error.message);
 }
 
 
 
 console.log('---------------4---------------');
 
+class MonthException {
+    constructor(message) {
+        this.name = 'MonthException';
+    }
+}
+
+function showMonthName(month) {
+    const months = [
+        'January',
+        'February',
+        'March',
+        'April',
+        'May',
+        'June',
+        'July',
+        'August',
+        'September',
+        'October',
+        'November',
+        'December',
+    ];
+
+    if (month < 1 || month > 12) {
+        throw new MonthException('Incorrect month number');
+    }
+
+    return months[month - 1];
+}
+
+// console.log(showMonthName(16));
+
 
 console.log('---------------5---------------');
 
+const users = [7, -12, 44, -90, 22];
 
-console.log('---------------6---------------');
+function showUser(id) {
+    if (id < 0) {
+        throw new Error(`ID must not be negative: ${id}`)
+    }
+    return {id: id}
+}
 
-console.log('---------------7---------------');
 
+function showUsers(ids) {
+    const correctIds = [];
+    for (let i = 0; i < ids.length; i++) {
+        try {
+            let correctId = showUser(ids[i]);
+            correctIds.push(correctId);
+        } catch (error) {
+            console.log(error);
+        }
+    }
+    return correctIds;
+}
+
+
+console.log(showUsers(users));
