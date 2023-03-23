@@ -12,12 +12,12 @@
 ## 2. Напишіть функцію propsCount(currentObject), яка приймає об’єкт і визначає кількість властивостей цього об’єкта.
 Наприклад:
 
-` let mentor = { `
-`            course: "JS fundamental", `
-`            duration: 3,`
-`            direction: "web-development" `
-`        };`
-`propsCount(mentor);  // 3`
+- ` let mentor = { `
+- `            course: "JS fundamental", `
+- `            duration: 3,`
+- `            direction: "web-development" `
+- `        };`
+- `propsCount(mentor);  // 3`
 
 ## 3. 
 -  Створіть клас Person, у якого конструктор приймає параметри name і surname, а також міститься метод showFullName(), який виводить у консоль ім’я і прізвище особи. 
@@ -26,9 +26,9 @@
 - Також в класі Student необхідно реалізувати метод showCourse(), який виводитиме поточний курс студента (від 1 до 6). Значення курсу визначатиметься як різниця поточного року (визначити самостійно) і року вступу до ВНЗ.
 Приклад результату:
 
-`const stud1 = new Student("Petro", "Petrenko", 2019);`
-`console.log(stud1.showFullName("Petrovych")); // Petrenko Petro Petrovych`
-`console.log("Current course: " + stud1.showCourse()); //Current course: 4`
+- `const stud1 = new Student("Petro", "Petrenko", 2019);`
+- `console.log(stud1.showFullName("Petrovych")); // Petrenko Petro Petrovych`
+- `console.log("Current course: " + stud1.showCourse()); //Current course: 4`
 
 ## 4. А. Реалізувати клас, який описує простий маркер. У класі мають бути такі компоненти:
 - поле, яке зберігає колір маркера;
@@ -46,42 +46,42 @@
     - 6) Реалізувати динамічне сортування для будь-кої кількості працівників-екземплярів класу Worker.
 
 Example usage:
-`let worker1 = new Worker("John Johnson", 20, 23);`
-`console.log(worker1.fullName);          `       
-`worker1.showSalary();`
-`console.log("New experience: " + worker1.showExp);`
-`worker1.showSalaryWithExperience();`
-`worker1.setExp = 1.5;`
-`console.log("New experience: " + worker1.showExp);`
-`worker1.showSalaryWithExperience();`
-
-`let worker2 = new Worker("Tom Tomson", 48, 22);`
-`. . . . . .`
-
-`let worker3 = new Worker("Andy Ander", 29, 23);`
-`. . . . . .`
-
-`Output example:`
-`John Johnson`
-`John Johnson salary: 460`
-`New experience: 1.2`
-`John Johnson salary: 552`
-`New experience: 1.5`
-`John Johnson salary: 690`
-
-`Tom Tomson`
-`Tom Tomson salary: 1056`
-`. . . . . .`
-`New experience: 1.5`
-`Tom Tomson  salary: 1584`
-
-`Andy Ander`
-`Andy Ander salary: 667`
-`. . . . . .`
-`New experience: 1.5`
-`Andy Ander  salary: 1000.5`
-
-`Sorted salary:`
-`John Johnson: 690`
-`Andy Ander: 1000.5`
-`Tom Tomson: 1584`
+- `let worker1 = new Worker("John Johnson", 20, 23);`
+- `console.log(worker1.fullName);          `       
+- `worker1.showSalary();`
+- `console.log("New experience: " + worker1.showExp);`
+- `worker1.showSalaryWithExperience();`
+- `worker1.setExp = 1.5;`
+- `console.log("New experience: " + worker1.showExp);`
+- `worker1.showSalaryWithExperience();`
+- 
+- `let worker2 = new Worker("Tom Tomson", 48, 22);`
+- `. . . . . .`
+- 
+- `let worker3 = new Worker("Andy Ander", 29, 23);`
+- `. . . . . .`
+- 
+- `Output example:`
+- `John Johnson`
+- `John Johnson salary: 460`
+- `New experience: 1.2`
+- `John Johnson salary: 552`
+- `New experience: 1.5`
+- `John Johnson salary: 690`
+- 
+- `Tom Tomson`
+- `Tom Tomson salary: 1056`
+- `. . . . . .`
+- `New experience: 1.5`
+- `Tom Tomson  salary: 1584`
+- 
+- `Andy Ander`
+- `Andy Ander salary: 667`
+- `. . . . . .`
+- `New experience: 1.5`
+- `Andy Ander  salary: 1000.5`
+- 
+- `Sorted salary:`
+- `John Johnson: 690`
+- `Andy Ander: 1000.5`
+- `Tom Tomson: 1584`
