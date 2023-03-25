@@ -105,7 +105,7 @@ class Student extends Person {
     showCourse() {
         let today = new Date();
         let currentYear = today.getFullYear();
-        let course = currentYear - this.year + 1;
+        let course = currentYear - this.year;
         if (course >= 1 && course <= 6) {
             return `Current course: ${course}`
         } else return 'Курс вже не дійсний.'
