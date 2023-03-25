@@ -15,7 +15,7 @@
 Результат виводу: `1, 5, 2, 4, 3`
 
 ## 2. Для сторінки
-``` <body>
+ <body>
   <h1>I'am a big header!!!</h1>
   <div id="myDiv">
     <p>First paragraph</p>
@@ -29,7 +29,7 @@
     <li>horizontal!</li>
   </ul>
   <span>Make me invisible, please!</span>
-</body> ```
+</body>
 
 Напишіть скріпт, який за допомогою засобів DOM простилізує сторінку так як показано на картинці.
 
@@ -44,8 +44,10 @@
 
 ## 4.Задача описана в блоці JS
 https://codepen.io/misha_klymenko/pen/Jjabvez
+
 ## 5.Задача описана в блоці JS
 https://codepen.io/misha_klymenko/pen/abzLvqo
+
 ## 6.Задача описана в блоці JS
 https://codepen.io/misha_klymenko/pen/dyjyeGO
 
