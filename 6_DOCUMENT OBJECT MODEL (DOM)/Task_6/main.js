@@ -13,6 +13,7 @@ function changePriceByColor(e) {
     if (e.target.classList.contains('color')) {
         e.target.classList.add('active');
         calculateEndPrice();
+        changeShoeImage(e.target.attributes[2].nodeValue);
     }
 }
 
@@ -25,6 +26,11 @@ function changePriceBySize(e) {
     }
 }
 
+function changeShoeImage(e) {
+    document.querySelector('.show').classList.remove('show');
+    document.querySelector(`img[color="${e}"]`).classList.add('show');
+}
+
 function calculateEndPrice() {
     const activeButtons = document.querySelectorAll('.active');
     let activeColorPrice = Number(activeButtons[0].dataset.price);
@@ -32,5 +38,7 @@ function calculateEndPrice() {
     let endPrice = activeColorPrice + activeSizePrice;
     outPrice.innerText = `${endPrice - 0.01}$`;
 }
+
+
 
 calculateEndPrice();
