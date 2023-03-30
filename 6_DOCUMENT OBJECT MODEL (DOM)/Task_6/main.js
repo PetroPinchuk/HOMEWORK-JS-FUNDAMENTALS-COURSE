@@ -4,10 +4,8 @@ const colorButtons = document.querySelector('.colors');
 const sizeButtons = document.querySelector('.sizes');
 const outPrice = document.querySelector('#outprice');
 
-
 colorButtons.addEventListener('click', (e) => changePriceByColor(e));
 sizeButtons.addEventListener('click', (e) => changePriceBySize(e));
-
 
 function changePriceByColor(e) {
     document.querySelector('.active').classList.remove('active');
@@ -32,5 +30,7 @@ function calculateEndPrice() {
     let activeColorPrice = Number(activeButtons[0].dataset.price);
     let activeSizePrice = Number(activeButtons[1].dataset.price);
     let endPrice = activeColorPrice + activeSizePrice;
-    outPrice.innerText = `${(endPrice - 1) + 0.99}$`;
+    outPrice.innerText = `${endPrice - 0.01}$`;
 }
+
+calculateEndPrice();
