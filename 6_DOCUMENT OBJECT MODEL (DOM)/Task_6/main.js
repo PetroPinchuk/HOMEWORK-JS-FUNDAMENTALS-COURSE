@@ -7,9 +7,13 @@ const outPrice = document.querySelector('#outprice');
 colorButtons.addEventListener('click', (e) => changePriceByColor(e));
 sizeButtons.addEventListener('click', (e) => changePriceBySize(e));
 
+function changeShoeImage(e) {
+    document.querySelector('.show').classList.remove('show');
+    document.querySelector(`img[color="${e}"]`).classList.add('show');
+}
+
 function changePriceByColor(e) {
     document.querySelector('.active').classList.remove('active');
-    const price = Number(e.target.dataset.price);
     if (e.target.classList.contains('color')) {
         e.target.classList.add('active');
         calculateEndPrice();
@@ -19,16 +23,10 @@ function changePriceByColor(e) {
 
 function changePriceBySize(e) {
     document.querySelector('.size.active').classList.remove('active');
-    const price = Number(e.target.dataset.price);
     if (e.target.classList.contains('size')) {
         e.target.classList.add('active');
         calculateEndPrice();
     }
-}
-
-function changeShoeImage(e) {
-    document.querySelector('.show').classList.remove('show');
-    document.querySelector(`img[color="${e}"]`).classList.add('show');
 }
 
 function calculateEndPrice() {
@@ -38,7 +36,5 @@ function calculateEndPrice() {
     let endPrice = activeColorPrice + activeSizePrice;
     outPrice.innerText = `${endPrice - 0.01}$`;
 }
-
-
 
 calculateEndPrice();
