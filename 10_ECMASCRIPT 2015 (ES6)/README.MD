@@ -3,7 +3,8 @@
 
 10-1.
 Напишіть код в /* Ваш код */, щоб він працював
-``` let names = {
+``` 
+    let names = {
     first: "Tom",
     second: "Sam",
     third: "Ray",
